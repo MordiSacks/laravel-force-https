@@ -5,7 +5,7 @@
 Require this package with composer using the following command:
 
 ```bash
-composer require 
+composer require mordisacks/laravel-force-https
 ```
 
 After updating composer, add the service provider to the `providers` array in `config/app.php`
@@ -18,5 +18,22 @@ MordiSacks\LaravelForceHttps\ServiceProvider::class,
 To install this package on only development systems, add the `--dev` flag to your composer command:
 
 ```bash
-composer require --dev 
+composer require --dev mordisacks/laravel-force-https
 ```
+
+### Usage
+
+Just add `forceHttps` to your middleware list
+```php
+Route::group(['middleware' => ['forceHttps']], function () {
+    Route::get('/home', 'HomeController@index')->name('home');
+});
+```
+
+Or in a controller
+```php
+    public function __construct()
+    {
+        $this->middleware('forceHttps');
+    }
+``` 
