@@ -1,0 +1,21 @@
+{
+  "name": "mordisacks/laravel-force-https",
+  "authors": [
+    {
+      "name": "Mordi Sacks"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "MordiSacks\\LaravelForceHttps\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MordiSacks\\LaravelForceHttps\\ServiceProvider"
+      ]
+    }
+  }
+}
