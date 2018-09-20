@@ -13,7 +13,7 @@ class ServiceProvider extends IlluminateServiceProvider
      */
     public function boot()
     {
-        $this->app['router']->middleware('forceHttps', ForceHttps::class);
+        $this->app['router']->aliasMiddleware('forceHttps', ForceHttps::class);
     }
 
     /**
