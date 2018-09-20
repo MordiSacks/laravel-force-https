@@ -1,5 +1,16 @@
 {
   "name": "mordisacks/laravel-force-https",
+  "description": "Laravel middleware for forcing https connection",
+  "keywords": [
+    "laravel",
+    "middleware",
+    "ssl",
+    "https",
+    "force"
+  ],
+  "homepage": "https://github.com/MordiSacks/laravel-force-https",
+  "type": "library",
+  "license": "MIT",
   "authors": [
     {
       "name": "Mordi Sacks"
